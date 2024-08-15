@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #8a939b;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #8a939b;
+            margin-top: 0;
+        }
+
+        .section-content {
+            padding: 15px;
+            border-left: 5px solid #8a939b;
+            margin-left: 15px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #8a939b;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+
+        .experience-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .experience-item h3 {
+            margin-top: 0;
+        }
+
+        .experience-item ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .credly-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .credly-list li {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .credly-list li .badge-name {
+            margin-left: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+            }
+
+            .contact-info a {
+                margin-bottom: 5px;
+            }
+        }
+
+        footer {
+            background-color: #8a939b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: bottom;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            display: inline-block;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="animate__animated animate__fadeIn">
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 20px;">
+            <div style="display: flex; align-items: center;">
+                <img src="./assets/img/hg.jpg" alt="Logo"
+                    style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-right: 20px;">
+
+                <div>
+                    <h1>Hossam Galal's Online CV</h1>
+                    <h2>Software Developer</h2>
+                </div>
+            </div>
+            <nav>
+                <!-- #################### -->
+                <!-- Here you can add the dark mode toggle button -->
+            </nav>
+        </div>
+
+    </header>
+    <div class="container">
+        <section id="contact" class="animate__animated animate__fadeInUp">
+            <h2>Contact Information</h2>
+            <div class="section-content">
+                <div class="contact-info">
+                    <a href="https://www.linkedin.com/in/hossam-galal-a9087a153/" target="_blank">LinkedIn</a> |
+                    <a href="tel:+2001151858057">(+20)011-518-580-57</a> |
+                    <a href="https://quantum-tecnologies.blogspot.com/?m=1" target="_blank">Blog</a> |
+                    <a href="mailto:hussamgalal999@gmail.com">hussamgalal999@gmail.com</a> |
+                    <a href="https://github.com/hussamgalal999" target="_blank">GitHub</a> |
+                    <a href="https://www.credly.com/users/hussam-mohamed-galal/badges" target="_blank">Credly</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="animate__animated animate__fadeInUp">
+            <h2>Skills</h2>
+            <div class="section-content">
+                <ul class="skills-list">
+
+                    <li>JavaScript (ES6+), TypeScript, React, Vue, Angular</li>
+                    <li>Node.js, Express.js, RESTful APIs</li>
+                    <li>HTML5, CSS3, Sass, Bootstrap, Responsive Web Design</li>
+                    <li>State Management: Redux, Vuex</li>
+                    <li>Testing: Jest, React Testing Library</li>
+                    <li>Build Tools: Webpack, Vite</li>
+                    <li>Version Control: Git, GitHub</li>
+                    <li>CI/CD: Jenkins, GitLab CI</li>
+                    <li>Containerization: Docker</li>
+                    <li>Cloud Platforms: AWS, Azure</li>
+                    <li>Serverless Architecture, Microservices</li>
+                    <li>Web Performance Optimization</li>
+                    <li>Accessibility (WCAG)</li>
+                    <li>Cross-Browser Compatibility</li>
+                    <li>Web Security: OWASP</li>
+                    <li>API Design and Development</li>
+                    <li>Database: MongoDB, PostgreSQL</li>
+                    <li>Authentication: OAuth, JWT</li>
+                    <li>Agile Methodologies, Scrum</li>
+                    <li>UI/UX Design Principles</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience" class="animate__animated animate__fadeInUp">
+            <h2>Experience</h2>
+            <div class="section-content">
+                <h3>Software Engineering & Development</h3>
+                <div class="experience-item">
+                    <h3>Software Engineering Content Creator</h3>
+                    <p>YouTube - 07/2022 - Current</p>
+                    <ul>
+                        <li>Created educational content on various software engineering topics, including programming
+                            languages, frameworks, and best practices.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Software Engineer</h3>
+                    <p>Qudsystem Cairo, EGY - 03/2021 - 06/2022</p>
+                    <ul>
+                        <li>Designed and implemented enterprise fintech applications for South Korea's largest
+                            e-commerce
+                            platforms (Gmarket, Auction, SmilePay), driving monthly revenue of $1 billion using C# .NET,
+                            MVC,
+                            MSSQL, Node.js, React.js, Redux, and jQuery.</li>
+                        <li>Led the engineering team in designing and developing the fintech transaction dashboard,
+                            providing a
+                            comprehensive visual summary of daily user purchase patterns powered by Google Chart. This
+                            dashboard was utilized by the board of directors for informed decision-making.</li>
+                        <li>Managed the end-to-end experience of the commerce platform's cancel, return, and exchange
+                            systems
+                            (PC/Mobile).</li>
+                        <li>Successfully integrated multiple third-party systems with the escrow platform, including
+                            Alipay,
+                            resulting in a 23% increase in global revenue during the first quarter.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>AI Developer, Intern</h3>
+                    <p>Microsoft AI Cairo, EGY - 05/2020 - 02/2021</p>
+                    <ul>
+                        <li>Developed enterprise applications for Prime's Content Experiment Platforms using Java,
+                            React.js,
+                            AngularJS, AWS, and DynamoDB.</li>
+                        <li>Designed and implemented systems to empower marketers to conduct various optimization
+                            experiments within the Prime ecosystem.</li>
+                        <li>Automated and optimized business logic for core marketing experiments, including A/B
+                            testing,
+                            Auto-Targeting, and Multivariate Testing.</li>
+                        <li>Streamlined the user-experience testing process for marketing platforms by integrating
+                            Nightwatch Selenium.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>AI Engineer Intern</h3>
+                    <p>Huawei ICT Competition Online, EGY - 10/2019 - 04/2020</p>
+                    <ul>
+                        <li>Led the design and development of multiple enterprise-level microservice applications for
+                            the
+                            Commerce Experience Group, driving significant revenue growth.</li>
+                    </ul>
+                </div>
+
+                <h3>Game Development</h3>
+                <div class="experience-item">
+                    <h3>Software Engineer, Contract</h3>
+                    <p>IBM Cairo, EGY - 06/2019 - 09/2019</p>
+                    <ul>
+                        <li>Developed the client and server for the mobile RTS game "Combat Bots Cosmic Commander" using
+                            ActionScript3 and Java.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Security Analyst, Intern</h3>
+                    <p>Cisco Cairo, EGY - 01/2019 - 05/2019</p>
+                    <ul>
+                        <li>Developed the mobile social game application "Fashion Street" using Cocos2D/C++.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="animate__animated animate__fadeInUp">
+            <h2>Education</h2>
+            <div class="section-content">
+                <p>Bachelor of Management Information system - EST-MINYA Institute Minya, EGY - 09/2019 - 12/2025</p>
+                <ul>
+                    <li>Major in Management Information Systems and Computer Engineering</li>
+                </ul>
+                <h3>Online Certifications:</h3>
+                <ul>
+                    <li>Coursera: Nano Degree, Data Structure and Algorithm's · (June 2022)</li>
+                    <li>IBM SkillsBuild: Professional Certificate, Cybersecurity Fundamentals · (September 2021)</li>
+                    <li>Cisco Acd: Professional Certificate, CyberOps · (September 2021)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="animate__animated animate__fadeInUp">
+            <h2>Projects</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Designed and developed an award-winning action puzzle game SPIKE at a Game Development
+                        Competition in Egypt (03/2024)</li>
+                    <li>Developed a classic Tic-Tac-Toe game with the option to play against a friend or
+                        the computer.</li>
+                    <li>Developed a dashboard using React to analyze and visualize
+                        COVID-19 data.</li>
+                    <li>Developed an AI application using
+                        JavaScript, Google APIs, and machine learning techniques.</li>
+                    <li>Developed an AI-powered image generator.</li>
+                    <li>Developed an online fashion store platform.</li>
+                    <li>Developed a password generator application.</li>
+                    <li>Developed a platform for Qudsystem Software Company.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="mentorship" class="animate__animated animate__fadeInUp">
+            <h2>Mentorship</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Served as a Coding Bootcamp Mentor, providing guidance and career advice to software
+                        engineering students (01/2021 - 04/2022)</li>
+                    <li>Provided tutoring in programming, data structures and algorithms, career
+                        advice, coding interview preparation, and professional portfolio development.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="others" class="animate__animated animate__fadeInUp">
+            <h2>Other Achievements</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Won 4th place for the development of the action game SPIKE at the HAL Game Development
+                        Competition in Egypt (03/2013)</li>
+                    <li>Achieved the highest level of Egypt language
+                        proficiency (88% Pass Rate) (02/2014)</li>
+                </ul>
+            </div>
+        </section>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+
+            header {
+                background-color: #8a939b;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            .container {
+                max-width: 960px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            section {
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                color: #8a939b;
+                margin-top: 0;
+            }
+
+            .section-content {
+                padding: 15px;
+                border-left: 5px solid #8a939b;
+                margin-left: 15px;
+            }
+
+            .contact-info {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .contact-info a {
+                text-decoration: none;
+                color: #8a939b;
+            }
+
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
+
+            .skills-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .skills-list li {
+                margin-bottom: 5px;
+            }
+
+            .experience-item {
+                margin-bottom: 15px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            .experience-item h3 {
+                margin-top: 0;
+            }
+
+            .experience-item ul {
+                list-style: disc;
+                margin-left: 20px;
+            }
+
+            .credly-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .credly-list li {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+
+            .credly-list li .badge-name {
+                margin-left: 10px;
+            }
+
+            /* Badge Portfolio */
+            .badge-portfolio {
+                margin-bottom: 30px;
+            }
+
+            .badge-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .badge-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+
+            .badge-item img {
+                margin-right: 15px;
+            }
+
+            .badge-info {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .see-all-badges button {
+                background-color: #8a939b;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+            .see-all-badges button:hover {
+                background-color: #7c8180;
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .container {
+                    margin: 10px;
+                }
+
+                .contact-info {
+                    flex-direction: column;
+                }
+
+                .contact-info a {
+                    margin-bottom: 5px;
+                }
+            }
+
+            footer {
+                background-color: #8a939b;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                /* position:absolute ; */
+                bottom: 0;
+                width: 100%;
+            }
+
+            .social-icons {
+                display: inline-block;
+            }
+
+            .social-icons a {
+                display: inline-block;
+                margin: 0 10px;
+                color: #fff;
+                font-size: 20px;
+            }
+
+            .social-icons a:hover {
+                color: #f4f4f4;
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <div>
+                <!-- Existing sections here... -->
+
+                <!-- Badge Portfolio Section -->
+                <section id="badge-portfolio" class="animate__animated animate__fadeInUp badge-portfolio">
+                    <h2>Badge Portfolio</h2>
+                    <div class="section-content">
+                        <div class="badge-list">
+                            <div class="badge-item">
+                                <img src="https://images.credly.com/size/128x128/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png"
+                                    alt="Introduction to Cybersecurity" width="64" height="64">
+                                <div class="badge-info">
+                                    <span class="badge-name">Introduction to Cybersecurity</span>
+                                    <span class="badge-issued-date">Issued 1/29/21</span>
+                                    <span class="badge-issuer">Cisco</span>
+                                </div>
+                            </div>
+                            <div class="badge-item">
+                                <img src="https://images.credly.com/size/128x128/images/fce226c2-0f13-4e17-b60c-24fa6ffd88cb/Intro2IoT.png"
+                                    alt="Introduction to IoT" width="64" height="64">
+                                <div class="badge-info">
+                                    <span class="badge-name">Introduction to IoT</span>
+                                    <span class="badge-issued-date">Issued 1/31/21</span>
+                                    <span class="badge-issuer">Cisco</span>
+                                </div>
+                            </div>
+                            <div class="badge-item">
+                                <img src="https://images.credly.com/size/128x128/images/53f37f83-04a1-4935-9b1e-21a99cc6e1b2/CyberOpsAssoc.png"
+                                    alt="CyberOps Associate" width="64" height="64">
+                                <div class="badge-info">
+                                    <span class="badge-name">CyberOps Associate</span>
+                                    <span class="badge-issued-date">Issued 3/12/21</span>
+                                    <span class="badge-issuer">Cisco</span>
+                                </div>
+                            </div>
+                            <div class="badge-item">
+                                <img src="https://images.credly.com/size/128x128/images/50b96632-6cbb-40b7-ac0e-b83f49ff7f94/image.png"
+                                    alt="Cybersecurity Fundamentals" width="64" height="64">
+                                <div class="badge-info">
+                                    <span class="badge-name">Cybersecurity Fundamentals</span>
+                                    <span class="badge-issued-date">Issued 6/27/21</span>
+                                    <span class="badge-issuer">IBM-SkillsBuild</span>
+                                </div>
+                            </div>
+                            <div class="badge-item">
+                                <img src="https://officeproinc.com/wp-content/uploads/2021/10/A1002-CompTIA-A-Certification-Core-2.png"
+                                    alt="CompTIA Security+" width="64" height="64">
+                                <div class="badge-info">
+                                    <span class="badge-name">CompTIA Security+</span>
+                                    <span class="badge-issued-date">Issued [DATE]</span>
+                                    <span class="badge-issuer">CompTIA</span>
+                                </div>
+                            </div>
+                            <div class="badge-item">
+                                <img src="https://officeproinc.com/wp-content/uploads/2021/10/A1002-CompTIA-A-Certification-Core-2.png"
+                                    alt="CompTIA Security+" width="64" height="64">
+                                <div class="badge-info">
+                                    <span class="badge-name">CompTIA A+</span>
+                                    <span class="badge-issued-date">Issued [DATE]</span>
+                                    <span class="badge-issuer">CompTIA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="see-all-badges">
+
+
+                            <button type="button" onclick="toggleBadges()">See all badges</button>
+                        </div>
+                        <script>
+                            function toggleBadges() {
+                                const badges = document.querySelectorAll('.badge-item');
+                                const button = document.querySelector('.see-all-badges button');
+                                const isExpanded = button.textContent === 'See fewer badges';
+
+                                badges.forEach((badge, index) => {
+                                    if (index >= 3) {
+                                        badge.style.display = isExpanded ? 'none' : 'flex';
+                                    }
+                                });
+
+                                button.textContent = isExpanded ? 'See all badges' : 'See fewer badges';
+                            }
+
+                            // Initially hide badges beyond the first 3
+                            document.addEventListener('DOMContentLoaded', () => {
+                                const badges = document.querySelectorAll('.badge-item');
+                                badges.forEach((badge, index) => {
+                                    if (index >= 3) {
+                                        badge.style.display = 'none';
+                                    }
+                                });
+                            });
+                        </script>
+                    </div>
+                </section>
+            </div>
+            <footer
+                style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            </footer>
+            <footer
+                style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div class="social-icons" style="margin-top: 20px;">
+                    <a href="#" style="margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" style="margin: 0 10px;"><i class="fab fa-github"></i></a>
+                </div>
+
+                <p style="text-align: center;">© 2024 Hossam Galal</p>
+            </footer>
+            </footer>
+            <script src="./OnlineCV/script.js"></script>
+            <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+        </body>
+
+        <!DOCTYPE html>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="./OnlineCV/style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+            <style>
+                /* Dark Mode Toggle Switch Style */
+                .dark-mode-toggle {
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    width: 60px;
+                    height: 34px;
+                }
+
+                .dark-mode-toggle input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    transition: .4s;
+                    border-radius: 34px;
+                }
+
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 26px;
+                    width: 26px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: white;
+                    transition: .4s;
+                    border-radius: 50%;
+                }
+
+                input:checked+.slider {
+                    background-color: #8a939b;
+                }
+
+                input:checked+.slider:before {
+                    transform: translateX(26px);
+                }
+
+                /* Dark Mode Styles */
+                body.dark-mode {
+                    background-color: #121212;
+                    color: #fff;
+                }
+
+                body.dark-mode header,
+                body.dark-mode .container,
+                body.dark-mode footer {
+                    background-color: #1f1f1f;
+                    color: #fff;
+                }
+
+                body.dark-mode .section-content {
+                    border-left-color: #fff;
+                }
+
+                /* Ensure colored text remains unaffected */
+                .dark-mode .contact-info a,
+                .dark-mode .skills-list li,
+                .dark-mode .badge-item .badge-name,
+                .dark-mode .experience-item h3 {
+                    color: inherit;
+                }
+
+                /* New style for blue title */
+                header h1 {
+                    color: #ffffff;
+                    /* White color for light mode */
+                }
+
+                header h2 {
+                    color: #ffffff;
+                    /* White color for light mode */
+                }
+
+                /* Dark Mode Styles */
+                body.dark-mode header h1 {
+                    color: #8a939b;
+                    /* Sky blue color for dark mode */
+                }
+
+                body.dark-mode header h2 {
+                    color: #8a939b;
+                    /* Sky blue color for dark mode */
+                }
+
+                /* Print button styles */
+                #print-button,
+                #certificate-print-button {
+                    background-color: #8a939b;
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    transition: background-color 0.3s;
+                }
+
+                #print-button:hover,
+                #certificate-print-button:hover {
+                    background-color: #7c8180;
+                }
+
+                body.dark-mode #print-button,
+                body.dark-mode #certificate-print-button {
+                    background-color: #7c8180;
+                }
+
+                body.dark-mode #print-button:hover,
+                body.dark-mode #certificate-print-button:hover {
+                    background-color: #8a939b;
+                }
+            </style>
+        </head>
+
+        <body>
+            <header class="animate__animated animate__fadeIn">
+                <label class="dark-mode-toggle">
+                    <input type="checkbox" id="dark-mode-switch">
+                    <span class="slider"></span>
+                </label>
+            </header>
+
+            <!-- Rest of your HTML content -->
+
+
+            <script src="./OnlineCV/script.js"></script>
+            <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                    const darkModeSwitch = document.getElementById('dark-mode-switch');
+                    const body = document.body;
+
+                    // Check the user's preference from localStorage
+                    if (localStorage.getItem('darkMode') === 'enabled') {
+                        body.classList.add('dark-mode');
+                        darkModeSwitch.checked = true;
+                    }
+
+                    // Toggle dark mode on switch change
+                    darkModeSwitch.addEventListener('change', () => {
+                        if (darkModeSwitch.checked) {
+                            body.classList.add('dark-mode');
+                            localStorage.setItem('darkMode', 'enabled');
+                        } else {
+                            body.classList.remove('dark-mode');
+                            localStorage.setItem('darkMode', 'disabled');
+                        }
+                    });
+
+                    // Add Print Button
+                    const printButton = document.createElement('button');
+                    printButton.textContent = 'Print  CV';
+                    printButton.id = 'print-button';
+                    printButton.addEventListener('click', () => {
+                        window.print();
+                    });
+
+                    // Add Certificate Print Button
+                    const certificatePrintButton = document.createElement('button');
+                    certificatePrintButton.textContent = 'Printing certificates';
+                    certificatePrintButton.id = 'certificate-print-button';
+                    certificatePrintButton.value = 'Hossam Galal_ Certifications.pdf';
+                    certificatePrintButton.addEventListener('click', () => {
+
+
+
+                        const filePath = '/Hossam Galal_ Certifications.pdf'; // specify the file path here
+                        const link = document.createElement('a');
+                        link.href = filePath;
+                        link.download = 'Hossam Galal_ Certifications.pdf';
+                        link.click();
+                        window.open(filePath, '_blank');
+                    });
+
+                    // Create a container for the print buttons
+                    const printButtonContainer = document.createElement('div');
+                    printButtonContainer.style.cssText = 'text-align: center; margin-top: 20px;';
+                    printButtonContainer.appendChild(printButton);
+                    printButtonContainer.appendChild(certificatePrintButton);
+
+                    // Insert the print button container before the footer
+                    const footer = document.querySelector('footer');
+                    if (footer) {
+                        footer.parentNode.insertBefore(printButtonContainer, footer);
+                    } else {
+                        document.body.appendChild(printButtonContainer);
+                    }
+                });
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <footer>
+<style>body {
+    background: #D0D8DB;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+@charset "UTF-8";
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-tiktok, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.tiktok {
+  background: #000000;
+}
+
+.rounded-social-buttons .social-button.tiktok:hover, .rounded-social-buttons .social-button.tiktok:focus {
+  color: #000000;
+  background: #fefefe;
+  border-color: #000000;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}</style>
+                      <div class="rounded-social-buttons">
+                                        <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                        <a class="social-button tiktok" href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+<a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-w"></i></a>
+
+                                    </div>
+                    </footer>
+                    
+                    <p style="text-align: center;">
+<a href="https://bit.ly/3NoWqvu" target="_blank">© 2024 Hossam Galal
+</a>
+</p>
+                </div>
+            </footer>
+
+
+
+
+
+
+
+
+
+        </html>
