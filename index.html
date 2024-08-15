@@ -312,30 +312,235 @@
                 </ul>
             </div>
         </section>
-
-        <section id="credly" class="animate__animated animate__fadeInUp">
-            <h2>Credly Badges</h2>
-            <div class="section-content">
-                <ul class="credly-list">
-                    <li>
-                        <img src="https://www.credly.com/images/badges/default-badge.png" alt="Badge Icon" height="20">
-                        <span class="badge-name">Introduction to Cybersecurity - Cisco</span>
-                    </li>
-                    <li>
-                        <img src="https://www.credly.com/images/badges/default-badge.png" alt="Badge Icon" height="20">
-                        <span class="badge-name">Introduction to IoT - Cisco</span>
-                    </li>
-                    <li>
-                        <img src="https://www.credly.com/images/badges/default-badge.png" alt="Badge Icon" height="20">
-                        <span class="badge-name">CyberOps Associate - Cisco</span>
-                    </li>
-                    <li>
-                        <img src="https://www.credly.com/images/badges/default-badge.png" alt="Badge Icon" height="20">
-                        <span class="badge-name">Cybersecurity Fundamentals - IBM-SkillsBuild</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+    
+            header {
+                background-color: #3498db;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+            }
+    
+            h1 {
+                margin: 0;
+            }
+    
+            .container {
+                max-width: 960px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            section {
+                margin-bottom: 30px;
+            }
+    
+            h2 {
+                color: #3498db;
+                margin-top: 0;
+            }
+    
+            .section-content {
+                padding: 15px;
+                border-left: 5px solid #3498db;
+                margin-left: 15px;
+            }
+    
+            .contact-info {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+    
+            .contact-info a {
+                text-decoration: none;
+                color: #3498db;
+            }
+    
+            .contact-info a:hover {
+                text-decoration: underline;
+            }
+    
+            .skills-list {
+                list-style: none;
+                padding: 0;
+            }
+    
+            .skills-list li {
+                margin-bottom: 5px;
+            }
+    
+            .experience-item {
+                margin-bottom: 15px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+    
+            .experience-item h3 {
+                margin-top: 0;
+            }
+    
+            .experience-item ul {
+                list-style: disc;
+                margin-left: 20px;
+            }
+    
+            .credly-list {
+                list-style: none;
+                padding: 0;
+            }
+    
+            .credly-list li {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+            }
+    
+            .credly-list li .badge-name {
+                margin-left: 10px;
+            }
+    
+            /* Badge Portfolio */
+            .badge-portfolio {
+                margin-bottom: 30px;
+            }
+    
+            .badge-list {
+                list-style: none;
+                padding: 0;
+            }
+    
+            .badge-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+    
+            .badge-item img {
+                margin-right: 15px;
+            }
+    
+            .badge-info {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .see-all-badges button {
+                background-color: #3498db;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+    
+            .see-all-badges button:hover {
+                background-color: #2980b9;
+            }
+    
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .container {
+                    margin: 10px;
+                }
+    
+                .contact-info {
+                    flex-direction: column;
+                }
+    
+                .contact-info a {
+                    margin-bottom: 5px;
+                }
+            }
+    
+            footer {
+                background-color: #3498db;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+    
+            .social-icons {
+                display: inline-block;
+            }
+    
+            .social-icons a {
+                display: inline-block;
+                margin: 0 10px;
+                color: #fff;
+                font-size: 20px;
+            }
+    
+            .social-icons a:hover {
+                color: #f4f4f4;
+            }
+        </style>
+    </head>
+    
+    <body>
+     
+        <div class="container">
+            <!-- Existing sections here... -->
+    
+            <!-- Badge Portfolio Section -->
+            <section id="badge-portfolio" class="animate__animated animate__fadeInUp badge-portfolio">
+                <h2>Badge Portfolio</h2>
+                <div class="section-content">
+                    <div class="badge-list">
+                        <div class="badge-item">
+                            <img src="https://images.credly.com/size/128x128/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png" alt="Introduction to Cybersecurity" width="64" height="64">
+                            <div class="badge-info">
+                                <span class="badge-name">Introduction to Cybersecurity</span>
+                                <span class="badge-issued-date">Issued 1/29/21</span>
+                                <span class="badge-issuer">Cisco</span>
+                            </div>
+                        </div>
+                        <div class="badge-item">
+                            <img src="https://images.credly.com/size/128x128/images/fce226c2-0f13-4e17-b60c-24fa6ffd88cb/Intro2IoT.png" alt="Introduction to IoT" width="64" height="64">
+                            <div class="badge-info">
+                                <span class="badge-name">Introduction to IoT</span>
+                                <span class="badge-issued-date">Issued 1/31/21</span>
+                                <span class="badge-issuer">Cisco</span>
+                            </div>
+                        </div>
+                        <div class="badge-item">
+                            <img src="https://images.credly.com/size/128x128/images/53f37f83-04a1-4935-9b1e-21a99cc6e1b2/CyberOpsAssoc.png" alt="CyberOps Associate" width="64" height="64">
+                            <div class="badge-info">
+                                <span class="badge-name">CyberOps Associate</span>
+                                <span class="badge-issued-date">Issued 3/12/21</span>
+                                <span class="badge-issuer">Cisco</span>
+                            </div>
+                        </div>
+                        <div class="badge-item">
+                            <img src="https://images.credly.com/size/128x128/images/50b96632-6cbb-40b7-ac0e-b83f49ff7f94/image.png" alt="Cybersecurity Fundamentals" width="64" height="64">
+                            <div class="badge-info">
+                                <span class="badge-name">Cybersecurity Fundamentals</span>
+                                <span class="badge-issued-date">Issued 6/27/21</span>
+                                <span class="badge-issuer">IBM-SkillsBuild</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="see-all-badges">
+                        <button type="button">See fewer badges</button>
+                    </div>
+                </div>
+            </section>
     </div>
 
     <footer>
@@ -349,7 +554,131 @@
     </footer>
 
     <script src="./OnlineCV/script.js"></script>
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
 </body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossam Galal's Online CV</title>
+    <link rel="stylesheet" href="./OnlineCV/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Dark Mode Toggle Switch Style */
+        .dark-mode-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 34px;
+        }
+
+        .dark-mode-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #3498db;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #fff;
+        }
+
+        body.dark-mode header, body.dark-mode .container, body.dark-mode footer {
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+
+        body.dark-mode .section-content {
+            border-left-color: #fff;
+        }
+
+        /* Ensure colored text remains unaffected */
+        .dark-mode .contact-info a, .dark-mode .skills-list li, .dark-mode .badge-item .badge-name, .dark-mode .experience-item h3 {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <header class="animate__animated animate__fadeIn">
+        <h1>Hossam Galal's Online CV</h1>
+        <label class="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode-switch">
+            <span class="slider"></span>
+        </label>
+    </header>
+
+    <!-- Rest of your HTML content -->
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>© 2024 Hossam Galal</p>
+    </footer>
+
+    <script src="./OnlineCV/script.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const darkModeSwitch = document.getElementById('dark-mode-switch');
+            const body = document.body;
+
+            // Check the user's preference from localStorage
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                body.classList.add('dark-mode');
+                darkModeSwitch.checked = true;
+            }
+
+            // Toggle dark mode on switch change
+            darkModeSwitch.addEventListener('change', () => {
+                if (darkModeSwitch.checked) {
+                    body.classList.add('dark-mode');
+                    localStorage.setItem('darkMode', 'enabled');
+                } else {
+                    body.classList.remove('dark-mode');
+                    localStorage.setItem('darkMode', 'disabled');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
