@@ -442,7 +442,7 @@
                 background-color: #3498db;
                 color: #fff;
                 border: none;
-                padding: 10px 20px;
+padding: 10px 20px;
                 cursor: pointer;
                 border-radius: 5px;
             }
@@ -499,8 +499,8 @@
             <!-- Existing sections here... -->
     
             <!-- Badge Portfolio Section -->
-            <section id="badge-portfolio" class="animate__animated animate__fadeInUp badge-portfolio">
-                <h2>Badge Portfolio</h2>
+<section id="badge-portfolio" class="animate__animated animate__fadeInUp badge-portfolio">
+<h2>Badge Portfolio</h2>
                 <div class="section-content">
                     <div class="badge-list">
                         <div class="badge-item">
@@ -541,8 +541,8 @@
                     </div>
                 </div>
             </section>
-    </div>
-
+        </div>
+<!-- 
     <footer>
         <div class="social-icons">
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -551,12 +551,13 @@
             <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <p>&copy; 2024 Hossam Galal</p>
-    </footer>
+    </footer> -->
 
     <script src="./OnlineCV/script.js"></script>
 <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
 </body>
 
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -632,6 +633,17 @@
         .dark-mode .contact-info a, .dark-mode .skills-list li, .dark-mode .badge-item .badge-name, .dark-mode .experience-item h3 {
             color: inherit;
         }
+
+        /* New style for blue title */
+            header h1 {
+                color: #ffffff; /* White color for light mode */
+            }
+
+            /* Dark Mode Styles */
+            body.dark-mode header h1 {
+color: #3498db; /* Sky blue color for dark mode */
+            }            color: blue;
+        }
     </style>
 </head>
 <body>
@@ -645,15 +657,7 @@
 
     <!-- Rest of your HTML content -->
 
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <p>© 2024 Hossam Galal</p>
-    </footer>
+            <div class="container">
 
     <script src="./OnlineCV/script.js"></script>
     <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
@@ -672,7 +676,7 @@
             darkModeSwitch.addEventListener('change', () => {
                 if (darkModeSwitch.checked) {
                     body.classList.add('dark-mode');
-                    localStorage.setItem('darkMode', 'enabled');
+localStorage.setItem('darkMode', 'enabled');
                 } else {
                     body.classList.remove('dark-mode');
                     localStorage.setItem('darkMode', 'disabled');
@@ -680,5 +684,6 @@
             });
         });
     </script>
+
 </body>
-</html>
+</html></html>
