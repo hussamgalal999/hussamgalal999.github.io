@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hossam Galal's Online CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         body {
@@ -124,7 +123,7 @@
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: bottom;
             bottom: 0;
             width: 100%;
         }
@@ -148,6 +147,7 @@
 
 <body>
     <header class="animate__animated animate__fadeIn">
+        <!-- #################### -->
         <h1>Hossam Galal's Online CV</h1>
     </header>
 
@@ -316,9 +316,9 @@
             <div class="section-content">
                 <ul>
                     <li>Won 4th place for the development of the action game SPIKE at the HAL Game Development
-                        Competition in Tokyo (03/2013)</li>
-                    <li>Achieved the highest level of Japanese language
-                        proficiency (24.1% Pass Rate) (02/2014)</li>
+                        Competition in Egypt (03/2013)</li>
+                    <li>Achieved the highest level of Egypt language
+                        proficiency (88% Pass Rate) (02/2014)</li>
                 </ul>
             </div>
         </section>
@@ -481,7 +481,7 @@
                 color: #fff;
                 text-align: center;
                 padding: 10px 0;
-                position: fixed;
+                /* position:absolute ; */
                 bottom: 0;
                 width: 100%;
             }
@@ -505,7 +505,7 @@
 
         <body>
 
-            <div class="container">
+<div >
                 <!-- Existing sections here... -->
 
                 <!-- Badge Portfolio Section -->
@@ -550,23 +550,23 @@
                                 </div>
                             </div>
                             <div class="badge-item">
-<img src="https://officeproinc.com/wp-content/uploads/2021/10/A1002-CompTIA-A-Certification-Core-2.png"
+                                <img src="https://officeproinc.com/wp-content/uploads/2021/10/A1002-CompTIA-A-Certification-Core-2.png"
                                     alt="CompTIA Security+" width="64" height="64">
                                 <div class="badge-info">
-<span class="badge-name">CompTIA Security+</span>
+                                    <span class="badge-name">CompTIA Security+</span>
                                     <span class="badge-issued-date">Issued [DATE]</span>
                                     <span class="badge-issuer">CompTIA</span>
                                 </div>
                             </div>
                             <div class="badge-item">
                                 <img src="https://officeproinc.com/wp-content/uploads/2021/10/A1002-CompTIA-A-Certification-Core-2.png"
-                                                                    alt="CompTIA Security+" width="64" height="64">
-                                                                <div class="badge-info">
-<span class="badge-name">CompTIA A+</span>
-                                                                    <span class="badge-issued-date">Issued [DATE]</span>
-                                                                    <span class="badge-issuer">CompTIA</span>
-                                                                </div>
-                                                            </div>
+                                    alt="CompTIA Security+" width="64" height="64">
+                                <div class="badge-info">
+                                    <span class="badge-name">CompTIA A+</span>
+                                    <span class="badge-issued-date">Issued [DATE]</span>
+                                    <span class="badge-issuer">CompTIA</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="see-all-badges">
 
@@ -578,13 +578,13 @@
                                 const badges = document.querySelectorAll('.badge-item');
                                 const button = document.querySelector('.see-all-badges button');
                                 const isExpanded = button.textContent === 'See fewer badges';
-                                
+
                                 badges.forEach((badge, index) => {
                                     if (index >= 3) {
                                         badge.style.display = isExpanded ? 'none' : 'flex';
                                     }
                                 });
-                                
+
                                 button.textContent = isExpanded ? 'See all badges' : 'See fewer badges';
                             }
 
@@ -597,18 +597,24 @@
                                     }
                                 });
                             });
-                        </script>                    </div>
+                        </script>
+                    </div>
                 </section>
             </div>
             <footer
                 style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </footer>
+            <footer
+                style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div class="social-icons" style="margin-top: 20px;">
+                    <a href="#" style="margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" style="margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" style="margin: 0 10px;"><i class="fab fa-github"></i></a>
                 </div>
+
                 <p style="text-align: center;">© 2024 Hossam Galal</p>
+            </footer>
             </footer>
             <script src="./OnlineCV/script.js"></script>
             <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
@@ -621,7 +627,6 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Hossam Galal's Online CV</title>
             <link rel="stylesheet" href="./OnlineCV/style.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
             <style>
@@ -745,7 +750,6 @@
 
         <body>
             <header class="animate__animated animate__fadeIn">
-                <h1>Hossam Galal's Online CV</h1>
                 <label class="dark-mode-toggle">
                     <input type="checkbox" id="dark-mode-switch">
                     <span class="slider"></span>
@@ -754,8 +758,7 @@
 
             <!-- Rest of your HTML content -->
 
-            <div class="container">
-
+ 
                 <script src="./OnlineCV/script.js"></script>
                 <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
                 <script>
@@ -792,11 +795,17 @@
                         const certificatePrintButton = document.createElement('button');
                         certificatePrintButton.textContent = 'Printing certificates';
                         certificatePrintButton.id = 'certificate-print-button';
-                        certificatePrintButton.value = 'certificate.pdf';
+                        certificatePrintButton.value = 'Hossam Galal_ Certifications.pdf';
                         certificatePrintButton.addEventListener('click', () => {
-                            // Add logic to print the certificate file
-                            console.log('Printing certificate:', certificatePrintButton.value);
-                            // You may want to replace this with actual printing logic
+
+
+
+                            const filePath = '/Hossam Galal_ Certifications.pdf'; // specify the file path here
+                            const link = document.createElement('a');
+                            link.href = filePath;
+                            link.download = 'Hossam Galal_ Certifications.pdf';
+                            link.click();
+                            window.open(filePath, '_blank');
                         });
 
                         // Create a container for the print buttons
@@ -814,8 +823,7 @@
                         }
                     });
                 </script>
-
-        </body>
+         </body>
 
         </html>
 
