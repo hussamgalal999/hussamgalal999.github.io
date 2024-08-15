@@ -5,68 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hossam Galal's Online CV</title>
-    <!-- <link rel="stylesheet" href="./OnlineCV/styles.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-   <style>body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-header {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
 
-section {
-    margin-bottom: 20px;
-}
+        h1 {
+            margin: 0;
+        }
 
-h2 {
-    color: #3498db;
-}
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-p {
-    margin-bottom: 5px;
-}
+        section {
+            margin-bottom: 30px;
+        }
 
-ol, ul {
-    margin-top: 0;
-}
+        h2 {
+            color: #3498db;
+            margin-top: 0;
+        }
 
-/* تحسين الأقسام المتحركة */
-.animate__animated {
-    animation-duration: 1s;
-}
+        .section-content {
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin-left: 15px;
+        }
 
-.animate__fadeIn {
-    animation-name: fadeIn;
-}
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 10px;
+        }
 
-.animate__fadeInUp {
-    animation-name: fadeInUp;
-}
+        .contact-info a {
+            text-decoration: none;
+            color: #3498db;
+        }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}</style>
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+        }
+
+        .experience-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .experience-item h3 {
+            margin-top: 0;
+        }
+
+        .experience-item ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .credly-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .credly-list li {
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .credly-list li .badge-name {
+            margin-left: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+            }
+
+            .contact-info a {
+                margin-bottom: 5px;
+            }
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            display: inline-block;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .social-icons a:hover {
+            color: #f4f4f4;
+        }
+    </style>
 </head>
 
 <body>
@@ -74,93 +151,201 @@ ol, ul {
         <h1>Hossam Galal's Online CV</h1>
     </header>
 
-    <section id="contact" class="animate__animated animate__fadeInUp">
-        <h2>Contact Information</h2>
-        <p>Email: hussamgalal999@gmail.com</p>
-        <p>Phone:(+20) 011-518-58057</p>
-        <p>Address: Cairo,Giza</p>
-    </section>
+    <div class="container">
+        <section id="contact" class="animate__animated animate__fadeInUp">
+            <h2>Contact Information</h2>
+            <div class="section-content">
+                <div class="contact-info">
+                    <a href="https://www.linkedin.com/in/hossam-galal-a9087a153/" target="_blank">LinkedIn</a> |
+                    <a href="tel:+2001151858057">(+20)011-518-580-57</a> |
+                    <a href="https://quantum-tecnologies.blogspot.com/?m=1" target="_blank">Blog</a> |
+                    <a href="mailto:hussamgalal999@gmail.com">hussamgalal999@gmail.com</a> |
+                    <a href="https://github.com/hussamgalal999" target="_blank">GitHub</a> |
+                    <a href="https://www.credly.com/users/hussam-mohamed-galal/badges" target="_blank">Credly</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="summary" class="animate__animated animate__fadeInUp">
-        <h2>Professional Summary</h2>
-        <p>Experienced Cybersecurity Specialist with over 1 years of expertise in information security. Proven track record in problem resolution, customer satisfaction, and team collaboration. Eager to contribute to team success through hard work, attention to detail, and excellent organizational skills.</p>
-    </section>
+        <section id="skills" class="animate__animated animate__fadeInUp">
+            <h2>Skills</h2>
+            <div class="section-content">
+                <ul class="skills-list">
+                    <li>C# | .NET | Java | JavaScript | TypeScript | C++ | C | PHP | MSSQL | Node | Express | React | Vue |
+                        Redux | jQuery | NoSQL | Git</li>
+                    <li>Azure | Cloud Computing | Unit Testing | OOP | Game Development</li>
+                    <li>Microservices | Frontend | Backend | Full-Stack | English, German, Arabic – All professional
+                        proficiency or above</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="objective" class="animate__animated animate__fadeInUp">
-        <h2>Objective</h2>
-        <p>Seeking a full-time Cybersecurity Specialist position to utilize interpersonal skills, excellent time management, and problem-solving abilities. Committed to maintaining outstanding attendance, managing multiple priorities, and taking on added responsibilities to meet team goals.</p>
-    </section>
+        <section id="experience" class="animate__animated animate__fadeInUp">
+            <h2>Experience</h2>
+            <div class="section-content">
+                <div class="experience-item">
+                    <h3>YouTuber</h3>
+                    <p>YouTube - 07/2021 - Current</p>
+                    <ul>
+                        <li>Xcode, Hossam Galal Software Engineering, SWE Skits & Entertainment, Tech Life, Coding, Career
+                            Advice, LeetCode, Video Creation</li>
+                    </ul>
+                </div>
 
-    <section id="education" class="animate__animated animate__fadeInUp">
-        <h2>Education</h2>
-        <p>Bachelor of Managment Information System(MIS) - EST-MINYA Institute </p>
-    </section>
+                <div class="experience-item">
+                    <h3>AI Engineer Intern</h3>
+                    <p>Huawei ICT Competition Online, EGY - 10/2019 - 11/2019</p>
+                    <ul>
+                        <li>Led the design and development of multiple enterprise-level microservice applications of Commerce
+                            Experience Group, driving $35.3 </li>
+                    </ul>
+                </div>
 
-    <section id="certifications" class="animate__animated animate__fadeInUp">
-        <h2>Certifications</h2>
-        <ol>
-            <li>Certified Cyber Security Specialist - Introduction to Cybersecurity 0720 dm (July 2021)</li>
-            <li>Linux-Certified NDG Linux Unhatched (January 2020)</li>
-            <li>Certified IoT Fundamentals: Big Data & Analytics - MCIT (March 2021)</li>
-            <li>Get Connected- Certified Get Connected English 0121 (January 2021)</li>
-        </ol>
-    </section>
+                <div class="experience-item">
+                    <h3>AI Developer, Intern</h3>
+                    <p>Microsoft AI Cairo, EGY - 04/2017 - 04/2018</p>
+                    <ul>
+                        <li>Implemented enterprise applications of Prime's Content Experiment Platforms using Java, React,
+                            AngularJS, AWS, and DynamoDB.</li>
+                        <li>Designed and developed systems facilitating marketers to perform various optimization experiments
+                            within the Prime ecosphere.</li>
+                        <li>Automated and optimized business logic for the core marketing experiments, including A/B,
+                            Auto-Targeting, and Multivariate Testing.</li>
+                        <li>Completely automated the marketing platforms' user-experience testing process by integrating
+                            Nightwatch Selenium.</li>
+                    </ul>
+                </div>
 
-    <section id="professional-development" class="animate__animated animate__fadeInUp">
-        <h2>Professional Development</h2>
-        <ul>
-            <li>Cybersecurity Professional Development - IBM SkillsBuild - Online (March 2021)</li>
-            <li>Python for Everybody Specialization - University of Michigan-Dearborn - Online (June 2021)</li>
-        </ul>
-    </section>
+                <div class="experience-item">
+                    <h3>Software Engineer</h3>
+                    <p>Qudsystem Cairo, EGY - 12/2014 - 03/2017</p>
+                    <ul>
+                        <li>Designed and implemented enterprise fintech applications of South Korea's largest e-commerce platforms
+                            (Gmarket, Auction, SmilePay), driving monthly revenue of $1 billion using C# .NET, MVC, MSSQL, node,
+                            react, redux, and jQuery.</li>
+                        <li>Reported directly to CPO: Engineering lead for designing and developing the fintech transaction
+                            dashboard that provides a rich visual summary of daily user purchase patterns powered by Google
+                            Chart. Used by the board of directors in the decision-making process.</li>
+                        <li>Engineering owner of the E2E experience of the commerce platform's cancel, return, and exchange systems
+                            (PC/Mobile).</li>
+                        <li>Integrated multiple third-party systems with the escrow platform, including Alipay, increasing global
+                            revenue by 23% in the first quarter.</li>
+                    </ul>
+                </div>
 
-    <section id="skills" class="animate__animated animate__fadeInUp">
-        <h2>Skills</h2>
-        <ul>
-            <li>Cybersecurity: Risk Analysis, Defense Strategies, Incident Response</li>
-            <li>Programming: Python, C#, C++</li>
-            <li>Operating Systems: Windows, Linux</li>
-            <li>Tools: Wireshark, Cisco IDS, Splunk</li>
-            <li>Certifications: Certified Cyber Security Specialist, Linux-Certified NDG Linux Unhatched, Certified IoT Fundamentals, Get Connected- Certified Get Connected English</li>
-        </ul>
-    </section>
+                <div class="experience-item">
+                    <h3>Security Analyst, Intern</h3>
+                    <p>Cisco Cairo, EGY - 07/2014 - 08/2014</p>
+                    <ul>
+                        <li>Fashion Street: Mobile social game application development (Cocos2D/C++)</li>
+                    </ul>
+                </div>
 
-    <section id="experience" class="animate__animated animate__fadeInUp">
-        <h2>Experience</h2>
-        <p>Cybersecurity Specialist - Cisco, Giza, Cairo, (Start Date - Present)</p>
-        <!-- Add details of responsibilities and achievements -->
-    </section>
+                <div class="experience-item">
+                    <h3>Software Engineer, Contract</h3>
+                    <p>IBM Cairo, EGY - 06/2013 - 12/2013</p>
+                    <ul>
+                        <li>Combat Bots Cosmic Commander: Mobile RTS game client and server development (ActionScript3 & Java)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <section id="affiliations" class="animate__animated animate__fadeInUp">
-        <h2>Affiliations</h2>
-        <ul>
-            <li>APICS Association for Supply Chain Management</li>
-            <li>Association of Information Technology Professionals</li>
-            <li>Institute of Electrical and Electronics Engineers</li>
-        </ul>
-    </section>
+        <section id="education" class="animate__animated animate__fadeInUp">
+            <h2>Education</h2>
+            <div class="section-content">
+                <p>Bachelor of Management Information system - EST-MINYA Institute Minya, EGY - 09/2019 - 12/2025</p>
+                <ul>
+                    <li>Major in Management Information Systems and Computer Engineering</li>
+                </ul>
+                <h3>Online:</h3>
+                <ul>
+                    <li>Coursera: Nano Degree, Data Structure and Algorithm's · (June 2022)</li>
+                    <li>IBM SkillsBuild: Professional Certificate, Cybersecurity Fundamentals · (September 2021)</li>
+                    <li>Cisco Acd: Professional Certificate, CyberOps · (September 2021)</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="interests" class="animate__animated animate__fadeInUp">
-        <h2>Interests</h2>
-        <ul>
-            <li>Operating Systems</li>
-            <li>System Security</li>
-            <li>Information Security</li>
-            <li>Cyber Security Standards</li>
-            <li>Cybercrime</li>
-            <li>Penetration Test</li>
-        </ul>
-    </section>
+        <section id="projects" class="animate__animated animate__fadeInUp">
+            <h2>Projects</h2>
+            <div class="section-content">
+                <ul>
+                    <li>XO Game: Designed and developed an award-winning action puzzle game SPIKE at a Game Development
+                        Competition in Egypt (03/2024)</li>
+                    <li>Tic-Tac-Toe Game: Play the timeless game of Tic-Tac-Toe! Choose your opponent: challenge a friend or
+                        face off against the computer.</li>
+                    <li>React Covid-19 Analysis Dashboard</li>
+                    <li>QudMind Max AI App in JavaScript – Google Api, Machine Learning</li>
+                    <li>AI Images Generator</li>
+                    <li>ShopMe: Online fashion store</li>
+                    <li>Leo Password Generator</li>
+                    <li>Qudsystem Software Company Platform</li>
+                </ul>
+            </div>
+        </section>
 
-    <section id="languages" class="animate__animated animate__fadeInUp">
-        <h2>Languages</h2>
-        <ul>
-            <li>Arabic (Excellent)</li>
-            <li>English (Very Good)</li>
-        </ul>
-    </section>
+        <section id="mentorship" class="animate__animated animate__fadeInUp">
+            <h2>Mentorship</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Springboard: Coding Bootcamp Mentor responsible for mentoring and giving career advice to SWE students
+                        (01/2021 - 04/2022)</li>
+                    <li>Computer Science Tutor: Programming | Data Structure and Algorithms | career advice | coding interview
+                        prep | professional portfolio</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="others" class="animate__animated animate__fadeInUp">
+            <h2>Others</h2>
+            <div class="section-content">
+                <ul>
+                    <li>Bronze Award: Won 4th prize for the development of action game SPIKE at HAL Game Development Competition
+                        in Tokyo (03/2013)</li>
+                    <li>Certificate of Japanese Language Proficiency N1: The highest-level certificate of Japanese proficiency
+                        (24.1% Pass Rate) (02/2014)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="credly" class="animate__animated animate__fadeInUp">
+            <h2>Credly Badges</h2>
+            <div class="section-content">
+                <ul class="credly-list">
+                    <li>
+                        <img src="https://www.credly.com/images/badges/default-badge.png" alt="Badge Icon" height="20">
+                        <span class="badge-name">Introduction to Cybersecurity - Cisco</span>
+                    </li>
+                    <li>
+                        <img src="https://www.credly.com/images/badges/default-badge.png" alt="Badge Icon" height="20">
+                        <span class="badge-name">Introduction to IoT - Cisco</span>
+                    </li>
+                    <li>
+                        <img src="https://www.credly.com/images/badges/default-badge.png" alt="Badge Icon" height="20">
+                        <span class="badge-name">CyberOps Associate - Cisco</span>
+                    </li>
+                    <li>
+                        <img src="https://www.credly.com/images/badges/default-badge.png" alt="Badge Icon" height="20">
+                        <span class="badge-name">Cybersecurity Fundamentals - IBM-SkillsBuild</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 Hossam Galal</p>
+    </footer>
 
     <script src="./OnlineCV/script.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
